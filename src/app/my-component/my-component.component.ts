@@ -1,16 +1,17 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-my-component',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './my-component.component.html',
   styleUrl: './my-component.component.scss'
 })
 export class MyComponentComponent {
 
   isAdmin: boolean = false;
-  toggelAdmin() {
-    this.isAdmin = !this.isAdmin;
-  }
+  admin(): boolean {
+    return this.isAdmin = !this.isAdmin;
+}
 }

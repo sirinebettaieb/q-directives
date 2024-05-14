@@ -1,4 +1,8 @@
-<h1 [ngStyle]="{'color': isAdmin ? 'red' : 'black'}"> bonjour</h1>
-<button (click)="toggleAdmin()">Toggle Admin</button>
-<button> view</button>
-<button *ngIf="isAdmin ">edit </button>
+
+<div>
+    <h1 [ngStyle]="{backgroundColor:isAdmin ? 'red' : 'green'}">
+            Bonjour
+    </h1>
+</div>
+<button (click)="admin()" >View</button>
+<button *ngIf="isAdmin" >Edit</button>
